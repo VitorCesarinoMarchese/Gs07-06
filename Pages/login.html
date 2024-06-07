@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="icon" type="image/svg+xml" href="/Images/Logo.svg" />
+    <link rel="stylesheet" href="/Styles/index.css">
 </head>
 
 <body>
-    <div id="Login" class="small-screen">
-        <div class="small-screen-content">
+    <button class="voltar" onclick="voltar()"><i class="ph ph-arrow-left"></i>Voltar</button>
+    <section id="Login">
+        <div class="login">
             <h3>Usuário:</h3>
-            <input id="usuario" type="text" name="usuario" placeholder="Digite seu usuario...">
+            <input id="usuario" type="text" name="usuario" placeholder="1234">
             <h3>Senha:</h3>
-            <input id="senha" type="password" name="senha" placeholder="Digite sua senha...">
+            <input id="senha" type="password" name="senha" placeholder="1234">
             <p id="logar"></p>
             <button onclick="UsuarioSenha()" >Log In</button>
         </div>
-        <script src="script.js"></script>
+    </section>
+        <script src="/Scripts/login.js"></script>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </body>
 </html>

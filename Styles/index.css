@@ -371,6 +371,42 @@ footer h3 {
 .mobileImg {
   display: none;
 }
+.voltar{
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.0);
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25vh;
+}
+.login input{
+  border: 1px solid #181717;
+  border-radius: 20px;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+}
+.login button{
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: #0079c1;
+  border: 1px solid #181717;
+  cursor: pointer;
+}
+.login button:hover{
+  background-color: #003c60;
+}
+.voltar{
+  cursor: pointer;
+}
 @media (max-width: 800px) {
   .ph-list {
     display: flex;
@@ -389,6 +425,7 @@ footer h3 {
   }
   .mobileImg {
     display: flex;
+    width: 100%;
   }
   .none {
     display: none;

@@ -1,22 +1,20 @@
 function Login() {
     window.location.href="login.html";
-    
+}
+function voltar(){
+    window.history.back()
 }
 
 function UsuarioSenha() {
     const inputSenha = document.getElementById('senha');
     const inputUsuario = document.getElementById('usuario');
-    const logar = document.getElementById('logar');
-
     const usuario = inputUsuario.value;
     const senha = inputSenha.value;
 
     if (usuario === "1234" && senha === "1234") {
-        logar.textContent = 'Login concluído.'
+        window.alert('Login concluído.')
     } 
     else {
-        logar.textContent = 'Usuário ou senha incorretos, por favor tente novamente.';
+        window.alert("Usuário ou senha incorretos, por favor tente novamente.");
     }
-
-    window.location.href="index.html";
 }
